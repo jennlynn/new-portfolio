@@ -1,0 +1,62 @@
+.Blog {
+  padding-top: 30px;
+  background-color: #10162a;
+  background:
+  linear-gradient(#10162a 35%, transparent),
+  linear-gradient(to top left, #0a1630, transparent),
+  linear-gradient(to top right, #9f6e86f7, transparent);
+  background-blend-mode: multiply; // overlay or multiply
+  height: 50vh;
+  min-height: 300px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  &-button {
+    position: absolute;
+    top: 10%;
+    background-color: rgba(247, 238, 222, 0.4);
+    background-blend-mode: lighten;
+    border: 0;
+    padding: 20px 40px;
+    border-radius: 8px;
+    color: rgb(207, 205, 202);
+    font-size: 24px;
+    height: 200px;
+    width: 200px;
+    border-radius: 50%;
+    transition: .8s all;
+    z-index: 0;
+    &:hover {
+      background-color: rgba(247, 238, 222, 0.9);
+      color: rgb(65, 62, 59);
+      box-shadow: 0 0 30px rgba(243, 221, 188, 0.9);
+    }
+  }
+
+  &-mountain {
+    box-shadow: 0 0 10px 10px rgba(0, 0, 0, .7);
+  
+    &--one {
+      fill: #19223e;
+      stroke: #131b31;
+    }
+    &--two {
+      fill: #32406b;
+      stroke: #29355a;
+    }
+    &--three{
+      fill: #58699e;
+      stroke: #4b5a89;
+    }
+    &--four{
+      fill: #8193ca;
+      stroke: #7181b3;
+    }
+  }
+}
+
+path { 
+  fill: transparent; 
+  stroke: white; 
+
+  stroke-width: 1 }

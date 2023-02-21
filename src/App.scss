@@ -1,0 +1,23 @@
+.App {
+  font-family: sans-serif;
+  text-align: center;
+  height: 100vh;
+  overflow: hidden;
+  scroll-snap-align: start;
+  scroll-snap-type: y mandatory;
+  scroll-behavior: smooth;
+  position: relative;
+  &-content {
+    height: 100%;
+    scroll-snap-align: start;
+    scroll-snap-type: y mandatory;
+    scroll-behavior: smooth;
+    overflow: scroll;
+  }
+  & section {
+    position: relative;
+    scroll-snap-type: y mandatory;
+    scroll-behavior: smooth;  
+    scroll-snap-align: start;
+  }
+}

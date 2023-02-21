@@ -1,0 +1,70 @@
+.Hero {
+  margin: 0;
+  position: relative;
+  width: 100%;
+  height: 60%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  &-wrapper {
+    background:     
+      linear-gradient(transparent, #666270),
+      linear-gradient(to bottom right, #9f6e86f7 3%, transparent),
+      linear-gradient(to bottom left, #0a1630, transparent);
+    background-blend-mode: multiply; // overlay or multiply;
+    padding: 50px;
+    height: 85vh;
+    //max-height: 800px;
+    overflow: hidden;
+  }
+  // &-image {
+  //   position: fixed;
+  //   top: 0;
+  // }
+  &-text {
+    width: 100%;
+    font: bold 100px sans-serif;
+    text-transform: uppercase;
+  }
+  &-subHeader {
+    color: #979fa0;
+    font-weight: lighter;
+    text-transform: uppercase;
+    letter-spacing: 7px;
+    @media screen and (min-width: 1000px) {
+    }
+  }
+}
+
+
+// image background is set in js based on random number
+// each has a corresponding bg color below
+.img-layer {
+  fill: url(#p-img);
+}
+
+// background colors correspond with hero variations,
+// and are randomized and set in js
+.hc2 {
+  background-color: #6b787e;
+}
+.hc3 {
+  background-color: #0c222d;
+}
+.hc4 {
+  background-color: #0c2926;
+}
+.hc5 {
+ background-color: #0a1630; 
+}
+.hc6 {
+  background-color: #9f6e86f7;
+}
+.hc7 {
+  background-color: #6d4979;
+}
+.hc8 {
+  background-color: #666270;
+}
+
+
