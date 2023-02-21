@@ -1,17 +1,26 @@
 .Blog {
-  padding: 30px;
+  padding: 40px;
   background-color: #0b2935;
   min-height: 50vh;
   display: flex;
+  flex-direction: column;
   align-items: center;
   justify-content: center;
   background-image: url("../assets/images/portfolio-bg-steps.svg");
+  &-description {
+    max-width: 620px;
+    color: #b5c8cd;
+  }
   &-button {
     background-color: rgba(255, 255, 255, .2);
     border: 0;
     padding: 20px 40px;
     border-radius: 8px;
-    color: white;
     font-size: 24px;
+    transition: .8s all;
+    &:hover {
+      background-color: rgba(255, 255, 255, .9);
+      color: #1ba0be;
+    }
   }
 }

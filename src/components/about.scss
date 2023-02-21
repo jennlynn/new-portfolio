@@ -6,7 +6,8 @@
     linear-gradient(to top left, #0a1630, transparent),
     linear-gradient(to top right, #9f6e86f7, transparent);
     background-blend-mode: multiply; // overlay or multiply
-    display:flex;
+  // background-image: url("../assets/images/about-bg.svg");
+  display:flex;
       @media screen and (min-width: 1000px) {
       flex-direction: row;
     }
