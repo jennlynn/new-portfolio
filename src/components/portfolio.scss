@@ -1,16 +1,38 @@
 .Portfolio {
-  padding: 30px;
-  background-color: #0b2935;
-  min-height: 50vh;
+  padding-top: 30px;
+  background-color: #10162a;
+  background:
+  linear-gradient(#10162a 35%, transparent),
+  linear-gradient(to top left, #0a1630, transparent),
+  linear-gradient(to top right, #9f6e86f7, transparent);
+  background-blend-mode: multiply; // overlay or multiply
+  height: 50vh;
+  min-height: 300px;
   display: flex;
   align-items: center;
   justify-content: center;
   &-button {
-    background-color: rgba(255, 255, 255, .2);
+    position: absolute;
+    top: 30%;
+    background-color: rgba(247, 238, 222, 0.85);
+    background-blend-mode: lighten;
     border: 0;
     padding: 20px 40px;
     border-radius: 8px;
-    color: white;
+    color: #9d3d5c;
     font-size: 24px;
+    height: 200px;
+    width: 200px;
+    border-radius: 50%;
+    transition: .8s all;
+    //z-index: 1; // below the mount svg for scroll effect
+    &:hover {
+      background-color: #eeb68d;
+      color: #0c101c;
+      box-shadow: 0 0 30px #e67e32;
+    }
+  }
+  svg {
+    //z-index: 0; // above the button for scroll effect
   }
 }

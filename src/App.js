@@ -14,8 +14,8 @@ function App() {
       <div className="App-content">
         <Hero />
         <About />
-        <Portfolio />
         <Blog />
+        <Portfolio />
         <Footer />
         <Modal>
           <ContactCard />
