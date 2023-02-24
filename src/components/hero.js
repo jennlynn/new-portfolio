@@ -1,4 +1,5 @@
 import React from "react";
+
 import Nav from "./nav";
 import treesImage from "../assets/images/trees_2.jpg";
 import "./hero.scss";

@@ -21,3 +21,25 @@
     scroll-snap-align: start;
   }
 }
+
+// slide in on scroll styles
+// ${isVisible ? " " : ""}  motion-reduce:transition-none motion-reduce:hover:transform-none
+
+.isVisible {
+// opacity-100 blur-none translate-x-0
+  opacity: 100;
+  filter: blur(0);
+  transform: translateX(0);
+
+ }
+
+ .isNotVisible {
+// opacity-0 blur-lg -translate-x-20
+opacity: 0;
+filter: blur(16px);
+transform: translateX(20px);
+}
+
+.isVisible, isNotVisible {
+  transition: .5s all;
+}
