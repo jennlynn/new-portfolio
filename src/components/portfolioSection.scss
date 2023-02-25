@@ -3,18 +3,22 @@ $itemSize: 500px;
 .PortfolioSection {
   width: 100%;
   color: rgba(247, 238, 222, 0.85);
-  padding-top: 40px;
-  padding-bottom: 40px;
+  margin-top: 40px;
+  margin-bottom: 40px;
   overflow: hidden;
-
+  // background: linear-gradient(#47516f, #03050c), url("../assets/images/wavesOpacity.svg");
+  // background: linear-gradient(#47516f, #10162a);
+  // background-color: #47516f;
+  //background-blend-mode: multiply;
   &-button {
     border: 0;
     display: block;
+    width: 60%;
+    max-width: 700px;
     margin: 0 auto;
     background-color: rgba(95, 78, 112, 0);
     transition: .8s all;
     color: #cc554d;
-
     &:hover {
       background-color: rgba(95, 78, 112, 0.4);
       box-shadow: 0 0 30px rgba(95, 78, 112, 0.4);
@@ -26,7 +30,7 @@ $itemSize: 500px;
     }
   }
   &-content {
-    background-color: #070813;
+    //background: linear-gradient(#47516f, #10162a);
     position: relative;
     margin: 0 auto;
     width: auto;

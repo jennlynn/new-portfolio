@@ -1,6 +1,7 @@
 import React, { useState } from 'react';
 import "./portfolioSection.scss";
 import cx from 'classnames';
+import waveImg from '../assets/images/wavesOpacity.svg'
 
 
 const PortfolioSection = ({ name }) => {         
@@ -10,6 +11,7 @@ const PortfolioSection = ({ name }) => {
   return (   
     <div className={cx("PortfolioSection", {"isActive" : isActive})}>
           
+      {/* <img src={waveImg} /> */}
       <button onClick={() => setIsActive(!isActive)} className={cx("PortfolioSection-button", {"isActive" : isActive})}>
         <h3 className={cx("PortfolioSection-header", {"isActive" : isActive})}>{name}</h3>
       </button>

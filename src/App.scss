@@ -10,15 +10,15 @@
   &-content {
     height: 100%;
     scroll-snap-align: start;
-    scroll-snap-type: y mandatory;
+    scroll-snap-type: y ;
     scroll-behavior: smooth;
     overflow: scroll;
   }
   & section {
     position: relative;
-    scroll-snap-type: y mandatory;
-    scroll-behavior: smooth;  
-    scroll-snap-align: start;
+    // scroll-snap-type: y proximity;
+    // scroll-behavior: smooth;  
+    // scroll-snap-align: start;
   }
 }
 
