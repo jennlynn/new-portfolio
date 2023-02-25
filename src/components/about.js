@@ -7,6 +7,7 @@ const About = () => {
   return (
     <section className="About">
       <div className="About-content">
+        <h2 className="About-heading u-heading">About</h2>
         <img
           className="About-image"
           src={jennrabin}
@@ -15,12 +16,12 @@ const About = () => {
           height="400"
         />
         
+          <p className="About-description u-description">
          <AnimateOnScroll reappear> 
-          <p className="About-text">
               I am a frontend software engineer with a passion for creating
               user-friendly and visually appealing websites that are accessible to
               all. My love for software engineering, art, and design, combined with
-              my drive for community building, makes me a unique and valuable asset∏
+              my drive for community building, makes me a unique and valuable asset
               to any team. My double major in Psychology and Philosophy in undergrad
               has given me unique insights into human behavior, which I apply to my
               work to create meaningful and impactful user experiences. I am
@@ -39,8 +40,8 @@ const About = () => {
               make a positive impact. I hope to share my projects, experiences, and
               insights through this site and I'm excited to continue growing as a
               software engineer, artist, and community builder.
-            </p>
         </AnimateOnScroll>
+            </p>
        
       </div>
     </section>

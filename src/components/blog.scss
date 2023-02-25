@@ -1,12 +1,13 @@
 .Blog {
   padding: 40px;
   background-color: #0b2935;
-  min-height: 50vh;
+  min-height: 90vh;
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: center;
-  background-image: url("../assets/images/portfolio-bg-steps.svg");
+  background-image: url("../assets/images/portfolio-bg-steps-2.svg");
+  background-size: cover;
   &-description {
     max-width: 620px;
     color: #b5c8cd;
@@ -23,5 +24,8 @@
       background-color: rgba(255, 255, 255, .9);
       color: #1ba0be;
     }
+  }
+  &-buttonEmph {
+    text-transform: uppercase;
   }
 }

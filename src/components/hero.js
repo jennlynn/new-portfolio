@@ -38,7 +38,6 @@ const Hero = () => {
         Artist ~ Frontend Dev ~ UX Enthusiast
         {/* ~ Prompt Engineer ~ Armchair Philosopher */}
       </h2>
-
       <Nav />
     </section>
   );

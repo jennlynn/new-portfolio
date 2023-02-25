@@ -7,7 +7,7 @@
   linear-gradient(to top left, #0a1630, transparent),
   linear-gradient(to top right, #9f6e86f7, transparent);
   background-blend-mode: multiply; // overlay or multiply
-  min-height: 50vh;
+  min-height: 80vh;
 
   &-bgSun {
     display: none;
@@ -37,12 +37,20 @@
     right: 0;
   }
   &-header {
-    color:rgb(229, 175, 135);
+    color: #e67e32;
+    text-transform: uppercase;
   }
-
+  &-description {
+    color:rgb(229, 175, 135);
+    max-width: 700px;
+    margin: 50px auto 100px;
+    line-height: 1.5em;
+    text-align: left;
+  }
   &-content {
     position: relative;
     z-index: 1; //  to be above bg svg
+    //padding-bottom: 33vh; // leaving room for svg
   }
 
 }

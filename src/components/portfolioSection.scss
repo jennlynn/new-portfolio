@@ -1,0 +1,95 @@
+$itemSize: 500px;
+
+.PortfolioSection {
+  width: 100%;
+  color: rgba(247, 238, 222, 0.85);
+  padding-top: 40px;
+  padding-bottom: 40px;
+  overflow: hidden;
+
+  &-button {
+    border: 0;
+    display: block;
+    margin: 0 auto;
+    background-color: rgba(95, 78, 112, 0);
+    transition: .8s all;
+    color: #cc554d;
+
+    &:hover {
+      background-color: rgba(95, 78, 112, 0.4);
+      box-shadow: 0 0 30px rgba(95, 78, 112, 0.4);
+    }
+  }
+  &-header {
+    &.isActive {
+      border-bottom: solid 1px #cc554d;
+    }
+  }
+  &-content {
+    background-color: #070813;
+    position: relative;
+    margin: 0 auto;
+    width: auto;
+    height: 0;
+    overflow: hidden;
+    // overflow-x: scroll;
+    transition: 1s height ease-in-out;
+    &.isActive {
+      height: 540px; //@TODO update to use var
+      height: calc(#{$itemSize} + 40px)
+    }
+    &::webkit-toolbar {
+      display: none;
+
+    }
+  }
+
+  &-itemsWrap {
+    position: absolute;
+    overflow: hidden;
+    overflow-x: scroll;
+    scroll-snap-type: x mandatory;
+    scroll-behavior: smooth;
+    padding-top: 20px;
+    padding-bottom: 20px;
+    white-space: nowrap;
+    width: 100%;
+  }
+  &-item {
+    position: relative;
+    display: inline-block;
+    height: $itemSize;
+    width: $itemSize;
+    margin-right: 5px;
+    overflow: hidden;
+    transition: 0.5s all ease-in-out;
+    aspect-ratio: 1/1;
+  & img {
+      filter: blur(2px);
+      transition: 0.8s all ease-in-out;
+    }
+    &:before {
+      content: '';
+      display: block;
+      position: absolute;
+      top: 0;
+      right: 0;
+      bottom: 0;
+      left: 0;
+      background-color: #000;
+      opacity: .7;
+      transition: 0.5s opacity ease-in-out;
+      z-index: 1; // over the image
+    }
+    &:hover {
+      & img {
+        filter: blur(0px);
+        transform: scale(1.01);
+      }
+      &:before {
+        transition: 0.3s opacity ease-in-out;
+        opacity: 0;
+      }
+    }
+  }
+}

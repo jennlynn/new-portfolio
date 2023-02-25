@@ -10,6 +10,7 @@ const Nav = () => {
 
   return (
     <section className="Nav">
+      
       <div className="Nav-wrap">
         <button className="Nav-button Nav-button--about" href="#">
           <svg
@@ -98,6 +99,12 @@ const Nav = () => {
 
         {/* <button className="Nav-button--nonsvg">Click Me --</button> */}
       </div>
+      <div class="custom-shape-divider-top-1677352365">
+        <svg data-name="Layer 1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 120" preserveAspectRatio="none">
+            <path d="M1200 0L0 0 598.97 114.72 1200 0z" class="shape-fill" stroke="#fff" fill="transparent"></path>
+        </svg>
+      </div>
+
       <Modal
         isOpen={modalIsOpen}
         onRequestClose={() => setIsOpen(false)}
