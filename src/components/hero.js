@@ -8,7 +8,7 @@ const Hero = () => {
   return (
     <section className="Hero-wrapper">
       <h1 className="Hero">
-        <svg viewBox="0 0 800 80" className="Hero-text">
+        <svg viewBox="0 0 800 120" className="Hero-text">
           <pattern
             id="p-img"
             viewBox="78 270 800 80"
