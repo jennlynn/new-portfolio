@@ -1,5 +1,5 @@
 import AnimateOnScroll from "../utils/animateOnScroll.tsx"
-import jennrabin from "../assets/images/jennrabin.jpg";
+import jennrabin from "../assets/images/jenn_rabin_3.png";
 import "./about.scss";
 
 

@@ -7,31 +7,35 @@
   align-items: center;
   justify-content: center;
   &-wrapper {
-    background:     
-      linear-gradient(transparent, #666270),
-      linear-gradient(to bottom right, #9f6e86f7 3%, transparent),
-      linear-gradient(to bottom left, #0a1630, transparent);
-    background-blend-mode: multiply; // overlay or multiply;
-    // background-image: url("../assets/images/about-bg.svg");
+    // background:     
+    //   linear-gradient(transparent, #666270),
+    //   linear-gradient(to bottom right, #9f6e86f7 3%, transparent),
+    //   linear-gradient(to bottom left, #0a1630, transparent);
+    // background-blend-mode: multiply; // overlay or multiply;
+    // // background-image: url("../assets/images/about-bg.svg");
+    background: 
+      linear-gradient(#643b6a, #1d3356, #1d3356), 
+      linear-gradient(to top left, #b0672a78, transparent),  
+      linear-gradient(to top right, #0b2737, transparent); 
+    background-blend-mode: overlay;
     padding: 50px;
     height: 85vh;
     //max-height: 800px;
     overflow: hidden;
   }
-  // &-image {
-  //   position: fixed;
-  //   top: 0;
-  // }
+
   &-text {
     width: 100%;
+    max-width: 1400px;
     font: bold 100px sans-serif;
     text-transform: uppercase;
   }
   &-subHeader {
-    color: #979fa0;
+    color: #e2b29e;
     font-weight: lighter;
     text-transform: uppercase;
     letter-spacing: 7px;
+    text-align: center;
     @media screen and (min-width: 1000px) {
     }
   }
@@ -67,5 +71,3 @@
 .hc8 {
   background-color: #666270;
 }
-
-

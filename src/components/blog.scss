@@ -1,31 +1,77 @@
 .Blog {
-  padding: 40px;
-  background-color: #0b2935;
-  min-height: 90vh;
+  background-image: url("../assets/images/sunset_mountains.svg");
+  background-size: cover;
+  min-height: 60vh;
+  padding-top: 10vh;
   display: flex;
   flex-direction: column;
   align-items: center;
-  justify-content: center;
-  background-image: url("../assets/images/portfolio-bg-steps-2.svg");
-  background-size: cover;
+  &-wrap {
+    background: linear-gradient(#1d3356, #2c375e 40%),
+    linear-gradient(to bottom left, #b0672a78, transparent 80%),
+    linear-gradient(to bottom right, #0b2737, transparent); 
+    background-blend-mode: overlay;
+    }
   &-description {
     max-width: 620px;
-    color: #b5c8cd;
+    color: #a1aabf;
   }
-  &-button {
-    background-color: rgba(255, 255, 255, .2);
+  &-linkWrap {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 350px;
+    width: 350px;
+
+  }
+  &-link {
+    display: inline-flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
     border: 0;
-    padding: 20px 40px;
-    margin-top: 60px;
-    border-radius: 8px;
+    padding: 30px 60px;
+    border-radius: 4px;
     font-size: 24px;
+    width: 200px;
     transition: .8s all;
+    margin: 55px 10px;
+    background-color: rgba(247, 238, 222, 0.85);
+    // background-blend-mode: lighten;
+    color: #9d3d5c;
     &:hover {
-      background-color: rgba(255, 255, 255, .9);
-      color: #1ba0be;
+      background-color: #eeb68d;
+      color: #0c101c;
+      padding: 120px 60px;
+      box-shadow: 0 0 30px #e67e32;
+      border-radius: 50%;
     }
-  }
+}
   &-buttonEmph {
     text-transform: uppercase;
+    font-weight: bold;
+    font-size: 28px;
   }
 }
+
+  // &-bgSun {
+  //   display: none;
+  //   position: absolute;
+  //   top: 3%;
+  //   background-color: rgba(247, 238, 222, 0.85);
+  //   background-blend-mode: lighten;
+  //   border: 0;
+  //   padding: 20px 40px;
+  //   border-radius: 8px;
+  //   color: #9d3d5c;
+  //   font-size: 24px;
+  //   height: 200px;
+  //   width: 200px;
+  //   border-radius: 50%;
+  //   transition: .8s all;
+  //   &:hover {
+  //     background-color: #eeb68d;
+  //     color: #0c101c;
+  //     box-shadow: 0 0 30px #e67e32;
+  //   }
+  // }

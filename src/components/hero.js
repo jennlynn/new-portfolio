@@ -1,7 +1,7 @@
 import React from "react";
 
 import Nav from "./nav";
-import treesImage from "../assets/images/trees_2.jpg";
+import treesImage from "../assets/images/text_bg_03.jpg";
 import "./hero.scss";
 
 const Hero = () => {
@@ -11,7 +11,7 @@ const Hero = () => {
         <svg viewBox="0 0 800 80" className="Hero-text">
           <pattern
             id="p-img"
-            viewBox="9 210 800 80"
+            viewBox="78 270 800 80"
             patternUnits="userSpaceOnUse"
             width="100%"
             height="100%"

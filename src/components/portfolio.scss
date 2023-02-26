@@ -1,13 +1,26 @@
 .Portfolio {
   padding-top: 30px;
-  //padding-bottom: 150px;
-  background-color: #10162a;
-  // background:
-  // linear-gradient(#10162a 35%, transparent),
-  // linear-gradient(to top left, #0a1630, transparent),
-  // linear-gradient(to top right, #9f6e86f7, transparent);
-  background-blend-mode: multiply; // overlay or multiply
-  min-height: 80vh;
+  background: 
+  linear-gradient(#1b2342, #1d3356), 
+  linear-gradient(to top left, #b0672a78, transparent 80%),
+  linear-gradient(to top right, #0b2737, transparent); 
+  background-blend-mode: overlay;
+  min-height: 60vh;
+
+  &-header {
+    color: #e67e32;
+    text-transform: uppercase;
+  }
+  &-description {
+    color: #e2bda2;
+    max-width: 700px;
+    margin: 50px auto 100px;
+    line-height: 1.5em;
+    text-align: left;
+  }
+  &-content {
+    position: relative;
+  }
 
   // &-bgSun {
   //   display: none;
@@ -30,25 +43,5 @@
   //     box-shadow: 0 0 30px #e67e32;
   //   }
   // }
-  // &-background {
-  //   position: absolute;
-  //   bottom: 0;
-  //   left: 0;
-  //   right: 0;
-  // }
-  &-header {
-    color: #e67e32;
-    text-transform: uppercase;
-  }
-  &-description {
-    color:rgb(229, 175, 135);
-    max-width: 700px;
-    margin: 50px auto 100px;
-    line-height: 1.5em;
-    text-align: left;
-  }
-  &-content {
-    position: relative;
-  }
 
 }
