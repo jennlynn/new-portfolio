@@ -35,8 +35,7 @@ const Hero = () => {
         </svg>
       </h1>
       <h2 className="Hero-subHeader">
-        Artist ~ Frontend Dev ~ UX Enthusiast
-        {/* ~ Prompt Engineer ~ Armchair Philosopher */}
+        Artist ~ Frontend Dev  ~ <wbr /> UX Enthusiast ~ <wbr /> A11y & DEI Advocate
       </h2>
       <Nav />
     </section>

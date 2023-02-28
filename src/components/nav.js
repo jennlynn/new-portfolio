@@ -36,25 +36,6 @@ const Nav = () => {
             </text>
           </svg>
         </button>
-        <button className="Nav-button Nav-button--blog" href="#">
-          <svg
-            className="Nav-buttonShapeWrap"
-            xmlns="http://www.w3.org/2000/svg"
-            viewBox="0 0 100 100"
-          >
-            <polygon
-              points="50 1 95 25 95 75 50 99 5 75 5 25"
-              className="Nav-buttonShape"
-            />
-            <polygon
-              points="50 1 95 25 95 75 50 99 5 75 5 25"
-              className="Nav-buttonShapeEffect"
-            />
-            <text className="Nav-buttonText" x="50" y="55" textAnchor="middle">
-              Blog
-            </text>
-          </svg>
-        </button>
         <button className="Nav-button Nav-button--portfolio" href="#">
           <svg
             className="Nav-buttonShapeWrap"
@@ -71,6 +52,25 @@ const Nav = () => {
             />
             <text className="Nav-buttonText" x="50" y="55" textAnchor="middle">
               Portfolio
+            </text>
+          </svg>
+        </button>
+        <button className="Nav-button Nav-button--blog" href="#">
+          <svg
+            className="Nav-buttonShapeWrap"
+            xmlns="http://www.w3.org/2000/svg"
+            viewBox="0 0 100 100"
+          >
+            <polygon
+              points="50 1 95 25 95 75 50 99 5 75 5 25"
+              className="Nav-buttonShape"
+            />
+            <polygon
+              points="50 1 95 25 95 75 50 99 5 75 5 25"
+              className="Nav-buttonShapeEffect"
+            />
+            <text className="Nav-buttonText" x="50" y="55" textAnchor="middle">
+              Blog
             </text>
           </svg>
         </button>
