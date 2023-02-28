@@ -19,7 +19,7 @@ $itemSize: 500px;
   }
   &-header {
     padding-bottom: 8px;
-    font-size: 18px;
+    font-size: 24px;
     font-family: 'Yatra One';
     &:after {
       content: '';
@@ -74,42 +74,5 @@ $itemSize: 500px;
     padding-bottom: 20px;
     white-space: nowrap;
     width: 100%;
-  }
-  &-item {
-    position: relative;
-    display: inline-block;
-    height: $itemSize;
-    width: $itemSize;
-    margin-right: 5px;
-    overflow: hidden;
-    transition: 0.5s all ease-in-out;
-    aspect-ratio: 1/1;
-  & img {
-      filter: blur(2px);
-      transition: 0.8s all ease-in-out;
-    }
-    &:before {
-      content: '';
-      display: block;
-      position: absolute;
-      top: 0;
-      right: 0;
-      bottom: 0;
-      left: 0;
-      background-color: #000;
-      opacity: .7;
-      transition: 0.5s opacity ease-in-out;
-      z-index: 1; // over the image
-    }
-    &:hover {
-      & img {
-        filter: blur(0px);
-        transform: scale(1.01);
-      }
-      &:before {
-        transition: 0.3s opacity ease-in-out;
-        opacity: 0;
-      }
-    }
   }
 }

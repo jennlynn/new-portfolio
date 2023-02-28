@@ -1,5 +1,6 @@
 import React, { useState } from 'react';
-import PortfolioSection from './portfolioSection';
+import DigitalPortfolioSection from './portfolioSection-digital';
+import TraditionalPortfolioSection from './portfolioSection-traditional';
 import AnimateOnScroll from "../utils/animateOnScroll.js"
 import "./portfolio.scss";
 
@@ -21,9 +22,8 @@ const Portfolio = () => {
       </AnimateOnScroll>
       <div className="Portfolio-content">
         
-      <PortfolioSection name="web dev & design"/>
-      <PortfolioSection name="digital art" />
-      <PortfolioSection name="paintings & sketches"/>
+      <DigitalPortfolioSection name="digital art 🤓"/>
+      <DigitalPortfolioSection name="traditional art 🎨"/>
 
       </div>
     </section>
