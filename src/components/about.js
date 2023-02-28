@@ -17,7 +17,7 @@ const About = () => {
         />
         
           <p className="About-description u-description">
-         <AnimateOnScroll reappear> 
+         <AnimateOnScroll> 
               I am a frontend software engineer with a passion for creating
               user-friendly and visually appealing websites that are accessible to
               all. My love for software engineering, art, and design, combined with

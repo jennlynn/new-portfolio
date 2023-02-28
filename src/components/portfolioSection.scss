@@ -21,8 +21,28 @@ $itemSize: 500px;
     padding-bottom: 8px;
     font-size: 18px;
     font-family: 'Yatra One';
-    &.isActive {
+    &:after {
+      content: '';
+      display: block;
+      margin: 0 auto;
       border-bottom: solid 1px #cc554d;
+      width: 0;
+      transition: 1s width ease-in-out;
+    }
+    &:hover {
+      &:after {
+        width: 100%;
+      }
+    } 
+    &.isActive {
+      &:after {
+        width: 100%;
+      }
+      &:before {
+        content: '';
+        display: block;
+        margin: 0 auto;
+      }
     }
   }
   &-content {

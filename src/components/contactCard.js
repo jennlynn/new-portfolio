@@ -4,7 +4,7 @@ import { faMobile, faLaptop } from "@fortawesome/free-solid-svg-icons";
 
 const ContactCard = () => {
   return (
-    <section className="ContactCard-wrp">
+    <section className="ContactCard-wrap">
       <div className="ContactCard">
         <h2 className="ContactCard-info ContactCard-info--name">Jenn Rabin</h2>
         <h3 className="ContactCard-info ContactCard-info--subheader">
