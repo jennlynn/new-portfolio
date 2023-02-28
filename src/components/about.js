@@ -1,4 +1,4 @@
-import AnimateOnScroll from "../utils/animateOnScroll.tsx"
+import AnimateOnScroll from "../utils/animateOnScroll.js"
 import jennRabinSketch from "../assets/images/jenn_rabin_sketch.png";
 import "./about.scss";
 

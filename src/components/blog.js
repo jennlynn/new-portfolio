@@ -1,4 +1,4 @@
-import AnimateOnScroll from "../utils/animateOnScroll.tsx"
+import AnimateOnScroll from "../utils/animateOnScroll.js"
 import "./blog.scss";
 
 const Blog = () => {

@@ -2,8 +2,9 @@
   padding-top: 30px;
   background: 
   linear-gradient(#1b2342, #1d3356), 
-  linear-gradient(to top left, #b0672a78, transparent 80%),
-  linear-gradient(to top right, #0b2737, transparent); 
+  linear-gradient(transparent, rgba(216,81,110, .4), transparent, transparent),
+  linear-gradient(to top right, #0b2737, transparent),
+  linear-gradient(to top left, #b0672a78, transparent 80%);
   background-blend-mode: overlay;
   min-height: 60vh;
 

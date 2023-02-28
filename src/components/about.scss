@@ -2,9 +2,10 @@
   padding: 30px 20px 90px;
   min-height: 70vh;
   background: 
-  linear-gradient(#1d3356, #2c375e 40%, #20455b,  #1b2342 ), 
-  linear-gradient(to bottom left, #b0672a78, transparent 80%),  
-  linear-gradient(to bottom right, #0b2737, transparent); 
+    linear-gradient(#1d3356, #2c375e 40%,  #1b2342 ), 
+    radial-gradient(#73d588, transparent, transparent),
+    linear-gradient(to bottom left, #b0672a78, transparent 80%),  
+    linear-gradient(to bottom right, #0b2737, transparent); 
   background-blend-mode: overlay;
   display:flex;
   justify-content: center;

@@ -1,6 +1,6 @@
 import React, { useState } from 'react';
 import PortfolioSection from './portfolioSection';
-import AnimateOnScroll from "../utils/animateOnScroll.tsx"
+import AnimateOnScroll from "../utils/animateOnScroll.js"
 import "./portfolio.scss";
 
 const Portfolio = () => {

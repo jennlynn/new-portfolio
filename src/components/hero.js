@@ -1,5 +1,5 @@
 import React from "react";
-import AnimateOnScroll from "../utils/animateOnScroll.tsx"
+import AnimateOnScroll from "../utils/animateOnScroll.js"
 import Nav from "./nav";
 import treesImage from "../assets/images/text_bg_03.jpg";
 import "./hero.scss";
