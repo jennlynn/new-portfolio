@@ -1,7 +1,7 @@
 import React from "react";
 import "./nav.scss";
 import NavButtonHex from "./navButtonHex";
-import Popover from "../utils/popover";
+import Popover from "../utils/contactPopover";
 import ContactCard from "./contactCard";
 
 const Nav = () => {
@@ -19,7 +19,7 @@ const Nav = () => {
         <button id="blog" className="Nav-button Nav-button--blog" href="#">
         <NavButtonHex name="blog" />
         </button>
-        <Popover content={<ContactCard />} placement="top">
+        <Popover content={<ContactCard />} placement="top" trigger="click">
           <button
             id="contact"
             className="Nav-button Nav-button--contact"

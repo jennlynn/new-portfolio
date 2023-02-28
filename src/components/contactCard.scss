@@ -7,10 +7,26 @@
   display: grid;
   grid-template-columns: repeat(6, 1fr);
   grid-template-rows: repeat(6, 1fr);
+  transition: .6s bottom cubic-bezier(0, 0, 0.32, 1.21);
+  z-index: 3; // above the button
+
+  position: absolute;
+  bottom: 90vh;
+  right: 400px;
+  .isOpen & {
+    bottom: 20vh;
+  }
   &-wrap {
-    position: absolute;
-    top: 50%; right: 0; bottom: 0; left: 0;
-    background-color: rgba(16, 22, 42, .7);
+    position: fixed;
+    top: 0;
+    bottom: 0;
+    width: 100%;
+    background-color: rgba(255, 255, 255, .5);
+    transition: .2s opacity;
+    opacity: 0;
+    .isOpen & {
+      opacity: 1;
+    }
   }
   &-info {
     color: #0b2935;
@@ -64,4 +80,60 @@
 
   }
 
+}
+
+
+
+.ContactCard2 {
+  display: flex;
+  flex-direction: column;
+  padding: 30px;
+  width: 500px;
+  height: 284px;
+
+  &-info {
+    color: #350b28;
+    padding-left: 40px;
+    width: 100%;
+    &--name {
+      font-size: 40px;
+      font-weight: 500;
+      font-family: 'Yatra One', sans-serif;
+      height: 40%;
+    }
+    &--phone, &--email {
+      font-size: 24px;
+      display: flex;
+    }
+
+  }
+  &-iconWrap {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-right: 8px;
+    height: 1.5em;
+    width: 1.5em;
+    border-radius: 50%;
+    background-color: #574054;
+      path {
+        fill: #fff8f1;
+        stroke: none;
+        padding: 5px;
+        margin: 5px;
+      }
+
+  }
+
+}
+
+.ContactPopover {
+  // position: fixed;
+  visibility: hidden;
+  opacity: 0;
+  transition: opacity 0.3s, visibility 0.1s;
+  &.isOpen {
+    visibility: visible;
+    opacity: 1;
+  }
 }

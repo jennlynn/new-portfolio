@@ -5,8 +5,6 @@ import About from "./components/about";
 import Blog from "./components/blog";
 import Portfolio from "./components/portfolio";
 import Footer from "./components/footer";
-import ContactCard from "./components/contactCard";
-import Modal from "react-modal";
 
 function App() {
   return (
@@ -17,9 +15,6 @@ function App() {
         <Portfolio />
         <Blog />
         <Footer />
-        <Modal>
-          <ContactCard />
-        </Modal>
       </div>
     </div>
 
