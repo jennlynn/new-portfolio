@@ -36,7 +36,7 @@ const Nav = () => {
             </text>
           </svg>
         </button>
-        <button className="Nav-button Nav-button--portfolio" href="#">
+        <button id="portfolio" className="Nav-button Nav-button--portfolio" href="#">
           <svg
             className="Nav-buttonShapeWrap"
             xmlns="http://www.w3.org/2000/svg"
@@ -55,7 +55,7 @@ const Nav = () => {
             </text>
           </svg>
         </button>
-        <button className="Nav-button Nav-button--blog" href="#">
+        <button id="blog" className="Nav-button Nav-button--blog" href="#">
           <svg
             className="Nav-buttonShapeWrap"
             xmlns="http://www.w3.org/2000/svg"
@@ -75,6 +75,7 @@ const Nav = () => {
           </svg>
         </button>
         <button
+          id="contact"
           className="Nav-button Nav-button--contact"
           onClick={() => setIsOpen(true)}
         >

@@ -1,5 +1,5 @@
 import AnimateOnScroll from "../utils/animateOnScroll.tsx"
-import jennrabin from "../assets/images/jenn_rabin_3.png";
+import jennRabinSketch from "../assets/images/jenn_rabin_sketch.png";
 import "./about.scss";
 
 
@@ -10,7 +10,7 @@ const About = () => {
         <h2 className="About-heading u-heading">About</h2>
         <img
           className="About-image"
-          src={jennrabin}
+          src={jennRabinSketch}
           alt="Jenn Rabin, senior frontend software engineer, artist, and community builder"
           width="300"
           height="400"

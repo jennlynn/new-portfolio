@@ -6,6 +6,10 @@
   display: flex;
   align-items: center;
   justify-content: center;
+  // targetting the animation wrapper
+  & div {
+    width: 100%;
+  }
   &-wrapper {
     background: 
       linear-gradient(#643b6a, #1d3356, #1d3356), 
@@ -13,11 +17,11 @@
       linear-gradient(to top right, #0b2737, transparent); 
     background-blend-mode: overlay;
     padding: 10px;
-    height: 85vh;
+    height: 95vh;
     overflow: hidden;
 
     @media screen and (min-width: 640px) {
-      padding: 50px;
+      padding: 50px 50px 0;
     }
   }
 

@@ -25,17 +25,17 @@ const PortfolioSection = ({ name }) => {
       </button>
       <div className={cx("PortfolioSection-content", {"isActive": isActive})}>
         <div className="PortfolioSection-itemsWrap">
-        <div className="PortfolioSection-item"><img src="http://placekitten.com/600/600" />
+        <div className="PortfolioSection-item"><img src="http://placekitten.com/600/600" alt=" " height="600" width="600" />
         </div>
-        <div className="PortfolioSection-item"><img src="http://placekitten.com/600/600" />
+        <div className="PortfolioSection-item"><img src="http://placekitten.com/600/600" alt=" " height="600" width="600" />
         </div>
-        <div className="PortfolioSection-item"><img src="http://placekitten.com/600/600" />
+        <div className="PortfolioSection-item"><img src="http://placekitten.com/600/600" alt=" " height="600" width="600" />
         </div>
-        <div className="PortfolioSection-item"><img src="http://placekitten.com/600/600" />
+        <div className="PortfolioSection-item"><img src="http://placekitten.com/600/600" alt=" " height="600" width="600" />
         </div>
-        <div className="PortfolioSection-item"><img src="http://placekitten.com/600/600" />
+        <div className="PortfolioSection-item"><img src="http://placekitten.com/600/600" alt=" " height="600" width="600" />
         </div>
-        <div className="PortfolioSection-item"><img src="http://placekitten.com/600/600" />
+        <div className="PortfolioSection-item"><img src="http://placekitten.com/600/600" alt=" " height="600" width="600" />
         </div>
       </div>
       </div>

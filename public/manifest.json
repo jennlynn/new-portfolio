@@ -1,6 +1,6 @@
 {
   "short_name": "Jenn Rabin dot com",
-  "name": "A simple, personal website.",
+  "name": "A simple, personal website built with create-react-app",
   "icons": [
     {
       "src": "j.ico",

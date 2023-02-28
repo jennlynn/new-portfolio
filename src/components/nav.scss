@@ -12,12 +12,12 @@ section.Nav {
     display: grid;
     grid-template-rows: repeat(4, 1fr);    
     grid-template-columns: repeat(4, 1fr);
-    @media screen and (min-width: 600px) {
-      margin: 0 auto;
-      max-width: 650px;
-      display: flex;
-      flex-direction: row;    
-    }  
+    overflow: hidden;
+
+    margin: 0 auto;
+    max-width: 650px;
+    display: flex;
+    flex-direction: row;    
   }
   &-button { 
     border: none;
@@ -26,6 +26,8 @@ section.Nav {
     background: none;
     flex-grow: 1;
     z-index: 1;
+    padding: 0;
+
     &--about {
       grid-row: 1 / span 2;
       grid-column: 2 / span 2;
@@ -44,8 +46,13 @@ section.Nav {
     }
   }
   &-buttonShapeWrap {
-    min-width: 100px;
-    max-width: 150px;
+    min-width: 80px;
+    max-width: 100px;
+
+    @media screen and (min-width: 600px) {
+      min-width: 100px;
+      max-width: 150px;
+    }  
   }
   &-buttonShape {
     fill: #6f3d50;
