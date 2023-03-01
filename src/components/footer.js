@@ -3,7 +3,7 @@ import "./footer.scss";
 const Footer = () => {
   return (
     <section className="Footer">
-      built with ❤️ by Jenn Rabin © 2023{" "}
+      © Jenn Rabin 2023-present. All rights reserved.
     </section>
   );
 };

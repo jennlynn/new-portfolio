@@ -1,0 +1,72 @@
+$itemSize: 500px;
+
+.PortfolioItem {
+    position: relative;
+    display: inline-block;
+    height: $itemSize;
+    width: $itemSize;
+    // margin-right: 5px;
+    border: solid 4px rgb(9, 1, 21);
+    overflow: hidden;
+    transition: 0.5s all ease-in-out;
+    aspect-ratio: 1/1;
+    box-sizing: border-box;
+  &:before {
+    content: '';
+    display: block;
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    background-color: #000;
+    opacity: .7;
+    transition: 0.5s opacity ease-in-out;
+    z-index: 1; // over the image
+  }
+  &-image {
+    height: 100%;
+    width: 100%;
+    filter: blur(2px);
+    transition: 0.8s all ease-in-out;
+    object-fit: cover;
+  }
+  &-info {
+    position: absolute;
+    bottom: 0;
+    width: calc(#{$itemSize} - 40px);
+    height: 150px;
+    margin-left: 20px;
+    margin-right: 20px;
+    padding: 20px;
+    text-align: left;
+    background-color: rgba(9, 1, 21, .95);
+    box-shadow: 0 0 10px rgb(9, 1, 21);
+    white-space: normal;
+    box-sizing: border-box;
+    transition: 0.3s all ease-in-out;
+    transition-delay: .2s;
+    z-index: 2; // over the overlay
+  }
+  &-name {
+    font-weight: bold;
+  }
+  &-meta {
+    font-style: italic;
+    color: #a199a9;
+  }
+  &:hover {
+    &:before {
+      transition: 0.3s opacity ease-in-out;
+      opacity: 0;
+    }
+  }
+  &:hover &-image {
+    filter: blur(0px);
+    transform: scale(1.01);
+  }
+  &:hover &-info {
+    bottom: -150px;
+    background-color: rgba(9, 1, 21, .8);
+  }
+}

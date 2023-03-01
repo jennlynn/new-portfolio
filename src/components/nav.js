@@ -10,23 +10,19 @@ const Nav = () => {
     <section className="Nav">
       
       <div className="Nav-wrap">
-          <button className="Nav-button Nav-button--about" href="#">
+          <a className="Nav-button Nav-button--about" href="#about">
             <NavButtonHex name="about" />
-          </button>
-        <button id="portfolio" className="Nav-button Nav-button--portfolio" href="#">
+          </a>
+        <a className="Nav-button Nav-button--portfolio" href="#portfolio">
           <NavButtonHex name="portfolio" />
-        </button>
-        <button id="blog" className="Nav-button Nav-button--blog" href="#">
+        </a>
+        <a className="Nav-button Nav-button--blog" href="#blog">
         <NavButtonHex name="blog" />
-        </button>
+        </a>
         <Popover content={<ContactCard />} placement="top" trigger="click">
-          <button
-            id="contact"
-            className="Nav-button Nav-button--contact"
-            // onClick={() => setIsOpen(true)}
-          >
+          <a className="Nav-button Nav-button--contact">
             <NavButtonHex name="contact" />
-          </button>
+          </a>
         </Popover>
 
       </div>

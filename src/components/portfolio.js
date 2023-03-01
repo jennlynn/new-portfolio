@@ -6,10 +6,8 @@ import "./portfolio.scss";
 
 const Portfolio = () => {
 
-  const [isActive, setIsActive] = useState(false);
-
   return (
-    <section className="Portfolio">
+    <section className="Portfolio" id="portfolio">
       <h2 className="Portfolio-header u-heading">Portfolio</h2>
       <AnimateOnScroll >
 
@@ -22,8 +20,8 @@ const Portfolio = () => {
       </AnimateOnScroll>
       <div className="Portfolio-content">
         
-      <DigitalPortfolioSection name="digital art 🤓"/>
-      <DigitalPortfolioSection name="traditional art 🎨"/>
+      <DigitalPortfolioSection name="digital art 💻"/>
+      <TraditionalPortfolioSection name="traditional art 🎨"/>
 
       </div>
     </section>
