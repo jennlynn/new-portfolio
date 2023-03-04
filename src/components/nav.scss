@@ -26,6 +26,8 @@ section.Nav {
     background: none;
     flex-grow: 1;
     padding: 0;
+    cursor: pointer;
+    text-decoration: none;
 
     &--about {
       grid-row: 1 / span 2;

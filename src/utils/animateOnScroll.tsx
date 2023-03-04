@@ -1,29 +1,29 @@
 import { useEffect, useRef, useState } from "react";
 
 
-// type Props = {
-//   children: React.ReactNode;
-//   reappear?: boolean;
-//   threshold?: number;
-// };
+type Props = {
+  children: React.ReactNode;
+  reappear?: boolean;
+  threshold?: number;
+};
 
-// type Options = {
-//   threshold: number,
-//   reappear?: boolean,
-// }
+type Options = {
+  threshold: number,
+  reappear?: boolean,
+}
 
 
-const useElementOnScreen = (options) => {
-  const containerRef = useRef(null);
-  const [isVisible, setIsVisible] = useState(false);
+const useElementOnScreen = (options: Options): [React.RefObject<HTMLDivElement>, boolean] => {
+  const containerRef = useRef<HTMLDivElement>(null);
+  const [isVisible, setIsVisible] = useState<boolean>(false);
 
-  const makeAppear = (entries) => {
+  const makeAppear = (entries: any) => {
     const [entry] = entries;
     if (entry.isIntersecting)
       setIsVisible(true);
   };
 
-  const makeAppearRepeating = (entries) => {
+  const makeAppearRepeating = (entries: any) => {
     const [entry] = entries;
     setIsVisible(entry.isIntersecting);
   };
@@ -47,7 +47,7 @@ const useElementOnScreen = (options) => {
 };
 
 
-const AnimateOnScroll = ({ children, reappear, threshold = 0.5 }) => {
+const AnimateOnScroll = ({ children, reappear, threshold = 0.5 }: Props) => {
   const [containerRef, isVisible] = useElementOnScreen({
     threshold: threshold,
     reappear: reappear,

@@ -12,9 +12,9 @@
 
   position: absolute;
   bottom: 90vh;
-  right: 400px;
+  right: calc(50vw - 250px);
   .isOpen & {
-    bottom: 20vh;
+    bottom: calc(50vh - 142px);
   }
   &-wrap {
     position: fixed;
@@ -30,10 +30,6 @@
   }
   &-info {
     color: #0b2935;
-    &--name,
-    &--subheader {
-      text-align: center;
-    }
     &--name {
       font-size: 30px;
       font-weight: 500;

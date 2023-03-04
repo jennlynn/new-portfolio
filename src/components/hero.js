@@ -1,5 +1,5 @@
 import React from "react";
-import AnimateOnScroll from "../utils/animateOnScroll.js"
+import AnimateOnScroll from "../utils/animateOnScroll.tsx"
 import Nav from "./nav";
 import treesImage from "../assets/images/text_bg_03.jpg";
 import "./hero.scss";
@@ -37,7 +37,8 @@ const Hero = () => {
       </AnimateOnScroll>
         </h1>
       <h2 className="Hero-subHeader">
-        Artist ~ Frontend Dev  ~ <wbr /> UX Enthusiast ~ <wbr /> A11y & DEI Advocate
+      {/* Artist ~ Frontend Dev  ~ <wbr /> UX Enthusiast ~ <wbr /> A11y & DEI Advocate */}
+      Frontend Dev  ~  Artist ~ <wbr /> UX Enthusiast ~ <wbr /> A11y & DEI Advocate 
       </h2>
       <Nav />
     </section>

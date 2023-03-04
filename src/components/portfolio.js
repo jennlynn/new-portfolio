@@ -1,7 +1,7 @@
 import React, { useState } from 'react';
 import DigitalPortfolioSection from './portfolioSection-digital';
 import TraditionalPortfolioSection from './portfolioSection-traditional';
-import AnimateOnScroll from "../utils/animateOnScroll.js"
+import AnimateOnScroll from "../utils/animateOnScroll.tsx"
 import "./portfolio.scss";
 
 const Portfolio = () => {

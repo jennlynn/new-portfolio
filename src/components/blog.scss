@@ -36,15 +36,15 @@
     width: 200px;
     transition: .8s all;
     margin: 55px 10px;
-    background-color: rgba(247, 238, 222, 0.85);
+    background-color: rgba(247, 238, 222, 0.9);
     // background-blend-mode: lighten;
     color: #9d3d5c;
     &:hover {
       background-color: #eeb68d;
       color: #0c101c;
-      padding: 120px 60px;
-      box-shadow: 0 0 30px #e67e32;
-      border-radius: 50%;
+      box-shadow: 0 0 3px #e67e32;
+      // padding: 120px 60px;
+      // border-radius: 50%;
     }
 }
   &-buttonEmph {
@@ -54,25 +54,3 @@
     font-family: 'Yatra One', sans-serif;
   }
 }
-
-  // &-bgSun {
-  //   display: none;
-  //   position: absolute;
-  //   top: 3%;
-  //   background-color: rgba(247, 238, 222, 0.85);
-  //   background-blend-mode: lighten;
-  //   border: 0;
-  //   padding: 20px 40px;
-  //   border-radius: 8px;
-  //   color: #9d3d5c;
-  //   font-size: 24px;
-  //   height: 200px;
-  //   width: 200px;
-  //   border-radius: 50%;
-  //   transition: .8s all;
-  //   &:hover {
-  //     background-color: #eeb68d;
-  //     color: #0c101c;
-  //     box-shadow: 0 0 30px #e67e32;
-  //   }
-  // }

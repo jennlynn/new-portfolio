@@ -16,6 +16,7 @@ $itemSize: 500px;
     transition: .8s all;
     color: #cc554d;
     width: 60%;
+    cursor: pointer;
   }
   &-header {
     padding-bottom: 8px;
@@ -26,7 +27,7 @@ $itemSize: 500px;
       display: block;
       margin: 0 auto;
       border-bottom: solid 1px #cc554d;
-      width: 0;
+      width: 50px;
       transition: 1s width ease-in-out;
     }
     &:hover {
@@ -46,13 +47,11 @@ $itemSize: 500px;
     }
   }
   &-content {
-    //background: linear-gradient(#47516f, #10162a);
     position: relative;
     margin: 0 auto;
     width: auto;
     height: 0;
     overflow: hidden;
-    // overflow-x: scroll;
     transition: 1s height ease-in-out;
     &.isActive {
       height: 540px; //@TODO update to use var

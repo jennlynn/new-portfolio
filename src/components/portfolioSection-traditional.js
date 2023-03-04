@@ -18,16 +18,15 @@ const PortfolioSection = ({ name }) => {
   return (   
     <div className={cx("PortfolioSection", {"isActive" : isActive})}>
           
-      {/* <img src={waveImg} /> */}
       <button onClick={() => setIsActive(!isActive)} className={cx("PortfolioSection-button", {"isActive" : isActive})}>
         <h3 className={cx("PortfolioSection-header", {"isActive" : isActive})}>{name}</h3>
 
-      
+{/*       
         <svg width="200" height="20" stroke="yellow" xmlns="http://www.w3.org/2000/svg">
           <path stroke="#fff" fill="red" d="L 100 1, L 1 20 "/>
-          <path stroke="#fff" fil="red" d="L 100 1, L 200 20 "/>
+          <path stroke="#fff" fill="red" d="L 100 1, L 200 20 "/>
         </svg>
-      
+       */}
       
       </button>
       <div className={cx("PortfolioSection-content", {"isActive": isActive})}>

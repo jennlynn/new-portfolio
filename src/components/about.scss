@@ -17,7 +17,6 @@
       max-width: 1200px;
       position: relative;
       margin: 0 auto;
-      text-align: left;
       display: flex;
       align-items: center;
       flex-direction: column;
@@ -31,7 +30,6 @@
     &-heading {
       width: 100%;
       text-transform: uppercase;
-      text-align: center;
       color: #d65c54;
     }
     &-image {
@@ -60,6 +58,10 @@
         padding: 0;
 
       }  
+      &-emphasis {
+        font-weight: bold;
+        color: rgb(206, 199, 187);
+      }
     }    
 }
 
