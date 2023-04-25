@@ -3,7 +3,7 @@ import "./footer.scss";
 const Footer = () => {
   return (
     <section className="Footer">
-      © Jenn Rabin 2023-present. All rights reserved.
+      © <a className="Footer-link" href="https://github.com/jennlynn">Jenn Rabin</a> 2023-present. All rights reserved.
     </section>
   );
 };

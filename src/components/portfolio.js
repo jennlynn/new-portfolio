@@ -20,8 +20,8 @@ const Portfolio = () => {
       </AnimateOnScroll>
       <div className="Portfolio-content">
         
-      <DigitalPortfolioSection name="digital art 💻"/>
-      <TraditionalPortfolioSection name="traditional art 🎨"/>
+      <DigitalPortfolioSection name="💻 graphic & web design"/>
+      <TraditionalPortfolioSection name="🎨 paintings & drawings"/>
 
       </div>
     </section>

@@ -19,7 +19,7 @@ const Hero = () => {
             >
               <image
                 href={treesImage}
-                width="800"
+                width="1000"
                 height="600"
                 className="Hero-image"
               />

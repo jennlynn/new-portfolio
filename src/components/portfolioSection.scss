@@ -27,7 +27,7 @@ $itemSize: 500px;
       display: block;
       margin: 0 auto;
       border-bottom: solid 1px #cc554d;
-      width: 50px;
+      width: 0;
       transition: 1s width ease-in-out;
     }
     &:hover {
@@ -44,6 +44,16 @@ $itemSize: 500px;
         display: block;
         margin: 0 auto;
       }
+    }
+  }
+  &-headerChevron {
+    display: inline-block;
+    transition: transform;
+    transition-duration: .2s;
+    transform-origin: center;
+    margin-left: 10px;    
+    &.isActive {
+      transform: rotate(180deg);      
     }
   }
   &-content {
